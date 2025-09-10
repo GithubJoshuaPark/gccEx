@@ -74,3 +74,11 @@ Book subject: [CS]
 ======================================
 
 ```
+
+![thumbnail.png](images/thumbnail.png)
+
+![thumbnail2.png](images/thumbnail2.png)
+
+![thumbnail3.png](images/thumbnail3.png)
+
+![thumbnail4.png](images/thumbnail4.png)
