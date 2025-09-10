@@ -1,8 +1,14 @@
-﻿  userHeader.c
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(534,5): warning MSB8028: 중간 디렉터리(x64\Debug\)에 다른 프로젝트(ConsoleApplication1.vcxproj)에서 공유하는 파일이 포함되어 있습니다.  이로 인해 잘못된 정리 및 다시 빌드 동작이 수행될 수 있습니다.
+  main.c
+  userHeader.c
+C:\Users\user\Desktop\dev\cppEx\cppEx\ConsoleApplication1\main.c(23,32): warning C4311: '형식 캐스트': 'int *'에서 'unsigned int'(으)로 포인터가 잘립니다.
+C:\Users\user\Desktop\dev\cppEx\cppEx\ConsoleApplication1\main.c(24,32): warning C4311: '형식 캐스트': 'int *'에서 'unsigned int'(으)로 포인터가 잘립니다.
+C:\Users\user\Desktop\dev\cppEx\cppEx\ConsoleApplication1\main.c(43,57): warning C4311: '형식 캐스트': 'int *'에서 'unsigned int'(으)로 포인터가 잘립니다.
 C:\Users\user\Desktop\dev\cppEx\cppEx\ConsoleApplication1\userHeader.c(47,9): warning C4311: '형식 캐스트': 'int *'에서 'unsigned int'(으)로 포인터가 잘립니다.
 C:\Users\user\Desktop\dev\cppEx\cppEx\ConsoleApplication1\userHeader.c(46,10): warning C4477: 'printf' : 서식 문자열 '%d'에 'int' 형식의 인수가 필요하지만 variadic 인수 5의 형식이 'size_t'입니다.
       C:\Users\user\Desktop\dev\cppEx\cppEx\ConsoleApplication1\userHeader.c(46,10):
       서식 문자열에서 '%zd'을(를) 사용하는 것이 좋습니다.
   
 C:\Users\user\Desktop\dev\cppEx\cppEx\ConsoleApplication1\userHeader.c(59,9): warning C4101: 'avg' :참조되지 않은 지역 변수입니다.
-  ConsoleApplication1.vcxproj -> C:\Users\user\Desktop\dev\cppEx\cppEx\x64\Debug\ConsoleApplication1.exe
+  코드를 생성하고 있습니다...
+  ConsoleApplication1.vcxproj -> C:\Users\user\Desktop\dev\cppEx\cppEx\x64\Debug\cppEx.exe
