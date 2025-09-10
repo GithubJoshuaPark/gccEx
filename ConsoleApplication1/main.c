@@ -11,6 +11,7 @@ int main(int argc, char* argv[]) {
 	int x = 5, y = 10;
 	int intArr[] = { 10, 100, 200 };
 	int i, * p, ** pp, sizeOfElement, sizeOfArray;
+	char isFileCreat = 0;
 
 	// type      |   1byte     | 2byte     | 4byte            |  8byte 
 	// ---------------------------------------------------------------------
@@ -66,7 +67,20 @@ int main(int argc, char* argv[]) {
 	printLine("Test showArry", true);
 	showArry();
 
-	//int return_ = showStructEx();
+	printf("\n\n----------------\n");
+	printf("Do you want to create a file (y/n)? ");
+	scanf_s("%c", &isFileCreat, 1);
+
+	if (isFileCreat == 'y' || isFileCreat == 'Y') {
+		int return_ = showStructEx();
+		if (return_ != 0) {
+			printf("Error occured !\n");
+			return 1;
+		}
+	}
+	else {
+		printf("File creation skipped.\n");
+	}
 
 
 	printLine("Test Bit Field", true);
