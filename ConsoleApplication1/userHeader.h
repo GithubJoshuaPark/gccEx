@@ -71,6 +71,6 @@ int* getArray(void);
 double getAvg(int* arr);
 void showArry(void);
 void printAll(struct Book* book, int howMany);
-int showStructEx(void);
+int showStructEx(char*);
 
 #endif

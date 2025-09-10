@@ -126,7 +126,7 @@ void printAll(struct Book* book, int howMany) {
 	}
 }
 
-int showStructEx(void) {
+int showStructEx(char* fileName) {
 	printLine("showStructEx Start", true);
 
 	int i, howMany;
@@ -168,7 +168,7 @@ int showStructEx(void) {
 	printAll(book, howMany);
 
 	// save the data into file
-    FILE* file = fopen("people.txt", "a"); // append 모드로 파일 열기
+    FILE* file = fopen(fileName, "a"); // append 모드로 파일 열기
 	if (file == NULL) {
 		perror("Error opening file");
 		return 1;

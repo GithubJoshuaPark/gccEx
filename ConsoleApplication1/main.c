@@ -12,6 +12,7 @@ int main(int argc, char* argv[]) {
 	int intArr[] = { 10, 100, 200 };
 	int i, * p, ** pp, sizeOfElement, sizeOfArray;
 	char isFileCreat = 0;
+	char fileName[50] = "people.txt";
 
 	// type      |   1byte     | 2byte     | 4byte            |  8byte 
 	// ---------------------------------------------------------------------
@@ -72,7 +73,16 @@ int main(int argc, char* argv[]) {
 	scanf_s("%c", &isFileCreat, 1);
 
 	if (isFileCreat == 'y' || isFileCreat == 'Y') {
-		int return_ = showStructEx();
+		// get fileName from user
+		printf("File name to create (default: people.txt): ");
+		scanf_s("%s", fileName, (unsigned int)sizeof(fileName));
+
+		// fileName should not be empty with the default value, "people.txt"
+		if (fileName[0] == '\0') {
+			strcpy_s(fileName, sizeof(fileName), "people.txt");
+		}
+
+		int return_ = showStructEx(fileName);
 		if (return_ != 0) {
 			printf("Error occured !\n");
 			return 1;
